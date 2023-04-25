@@ -1,27 +1,80 @@
-# web-dev-assignment1
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <title>my page</title>
+        <link  rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <ul>
-                <li><a href="https://www.uj.edu.sa/"><img class="menu" src="images/logo.png" alt="uj logo" ></li></a>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#info">personal info </a> </li>
-                <li><a href="#edu">education</a> </li>
-                <li><a href="#projects">projects </a> </li>
-                <li><a href="#contact">contact info</a> </li>
-                <li><a href="#more">more about me</a> </li>
-             </ul>
-        </header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="https://www.uj.edu.sa/"><img class="menu" src="images/logo.png" alt="uj logo" ></a>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#info">personal information</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#edu">education</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#more">more about me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact me</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">home</a></li>
+                        <li><a class="dropdown-item" href="#info">personal information</a></li>
+                        <li><a class="dropdown-item" href="#edu">education</a></li>
+                        <li><a class="dropdown-item" href="#projects">projects</a></li>
+                        <li><a class="dropdown-item" href="#more">more about me</a></li>
+                        <li><a class="dropdown-item" href="#contact">contact me</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
 
-        <img src="images/w.gif" alt="##">
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/w.gif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/w1.gif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/w2.gif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <section id="info">
             <h1 class="c1">personal information</h1>
@@ -43,7 +96,7 @@
                 I was on the scout's team in elementary school, and in middle school, I was on the school organization team. As for secondary school, I was responsible for projectors, and from here my love and passion began in the computer, and I always dreamed of entering the world of cybersecurity
                 Then, with Allah's grace and success, I was accepted into it, with a GPA of 4.88
                 <br><i>You can view some school certificates <a href="files/certifications.pdf">"here"</a></i>
-                <br><i><a href="files/010_ Security Zines_ XSS-certificate.pdf">xss course certificate</a></i>
+                <br><i><a href="files/010_SecurityZines_XSS-certificate.pdf">xss course certificate</a></i>
             </p>
             <br>
         </section>
@@ -61,7 +114,7 @@
                 <a href="files/DSproject.zip"><img src="images/DSproj.png" alt="DS project" class="proj"></a><br><br>
 
                 - Principle of Software Engineering project<br>
-                <a href="files/FinalReport_My Future+ App_YAL  (1).pdf"><img src="images/myfuture.png" alt="Software project" class="proj"></a><br><br>
+                <a href="files/MyFuture+App_YAL.pdf"><img src="images/myfuture.png" alt="Software project" class="proj"></a><br><br>
 
                 - you can find this page on github<br>
                 <a href="https://github.com/xmeowmeow/web-dev-assignment1.git"><img src="images/mypage.png" alt="page" class="proj"></a><br><br>
